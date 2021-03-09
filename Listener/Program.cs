@@ -14,12 +14,12 @@ namespace Listener
 
         public static readonly string domain = "https://demo.testit.software/";
         public static readonly string privateToken = "OGl6MnVTNzNXQXEyQm9RTUNo";
-        public static readonly Guid configurationId = new Guid("15dbb164-c1aa-4cbf-830c-8c01ae14f4fb");
+        public static readonly Guid configurationId = new Guid("2fd05113-d410-4ea0-a1af-07e7d91336cb");
         public static readonly ApiClient client = new ApiClient(domain, privateToken);
         public static readonly AutoTestResultsProvider resultsProvider = new AutoTestResultsProvider();
 
         public static readonly string PathToTests =
-            Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "\\TestAutomationProject";
+            Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "\\NUnitTest";
         private static readonly string PartialPathToResult = @"\reports\";
 
         static async Task Main()
